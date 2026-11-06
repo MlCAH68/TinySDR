@@ -34,9 +34,9 @@ python --version
 rem ---------- 2. Python packages ----------
 echo.
 echo [2/5] Installing Python packages, this can take a minute...
-python -m pip install --disable-pip-version-check pyrtlsdr numpy scipy sounddevice libusb-package libusb-package
+python -m pip install --disable-pip-version-check pyrtlsdr==0.5.1 numpy scipy sounddevice libusb-package
 if errorlevel 1 (
-    echo pip failed. Check your internet connection and try again.
+    echo pip failed. Check your internet connection and the messages above, then try again.
     goto fail
 )
 

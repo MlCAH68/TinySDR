@@ -1,0 +1,8 @@
+# TinySDR needs Windows and Python 3.9 or newer.
+# pyrtlsdr is pinned: tinysdr.py works around a mismatch between this exact version and the
+# RTL-SDR Blog driver DLL, and a newer pyrtlsdr could change what it expects.
+pyrtlsdr==0.5.1
+numpy>=1.24
+scipy>=1.10
+sounddevice>=0.4.6
+libusb-package>=1.0.26
